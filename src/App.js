@@ -1,46 +1,47 @@
 import logo from "./logo.svg";
 import "./App.css";
+import React from "react";
 
 function App() {
   return (
     <div className="App">
-      <div class="container">
-        <div class="card mt-5">
-          <div class="card-body">
+      <div className="container">
+        <div className="card mt-5">
+          <div className="card-body">
             <form id="search-form">
-              <div class="d-flex justify-content-evenly">
+              <div className="d-flex justify-content-evenly">
                 <div>
                   <input
                     type="search "
                     placeholder="Search"
-                    class="form-control"
+                    className="form-control"
                     id="search-bar"
-                    autofocus
-                    autocomplete="off"
+                    autoFocus
+                    autoComplete="off"
                   />
                 </div>
                 <div>
-                  <input type="submit" value="🔍" class="btn btn-light" />
+                  <input type="submit" value="🔍" className="btn btn-light" />
                 </div>
               </div>
             </form>
-            <div class="row m-3 information">
-              <div class="col-4 weather-info">
+            <div className="row m-3 information">
+              <div className="col-4 weather-info">
                 <ul>
                   <li id="city-name"></li>
                   <li id="day-and-time"></li>
                   <li id="description"></li>
                 </ul>
               </div>
-              <div class="col-4 weather-info clearfix">
-                <img src="" id="icon" />
+              <div className="col-4 weather-info clearfix">
+                <img src="" id="icon" alt="" />
                 <br />
-                <span class="temp"></span>
-                <a class="temp-symbol">°C </a>
-                <span class="brder-symbol"> |</span>
-                <a class="Fehrnhit-symbol"> °F </a>
+                <span className="temp"></span>
+                <a className="temp-symbol">°C </a>
+                <span className="brder-symbol"> |</span>
+                <a className="Fehrnhit-symbol"> °F </a>
               </div>
-              <div class="col-4 weather-info">
+              <div className="col-4 weather-info">
                 <ul>
                   <li id="pressure"></li>
                   <li id="humidity"></li>
@@ -48,13 +49,13 @@ function App() {
                 </ul>
               </div>
             </div>
-            <div class="futur-days" id="forcast"></div>
+            <div className="futur-days" id="forcast"></div>
           </div>
         </div>
 
         <span>
           <a href="https://github.com/Ranem97/weather-app-final" id="git-url">
-            Open-Source Code{" "}
+            Open-Source Code
           </a>
         </span>
         <span id="author">
