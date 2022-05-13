@@ -53,7 +53,7 @@ function App() {
         </div>
 
         <span>
-          <a href="https://github.com/Ranem97/weather-app-final" id="git-url">
+          <a href="https://github.com/Ranem97/weather-react" id="git-url">
             Open-Source Code
           </a>
         </span>
