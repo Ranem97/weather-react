@@ -1,38 +1,117 @@
-.App {
+:root {
+  --Primary-color: #113f67;
+  --Secondary-color: radial-gradient(
+    circle at 10% 20%,
+    #113f67,
+    rgb(7, 91, 173) 90%
+  );
+}
+p,
+li {
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+}
+h1,
+h2 {
+  display: inline;
+}
+ul {
+  list-style: none;
+}
+
+.card {
+  background: var(--Secondary-color);
+  border-color: var(--Primary-color);
+  color: #e7eaf6;
+}
+.weather-info,
+.information {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cards {
+  border-color: #fff;
+  background-color: #fff;
+  color: #113f67;
+  border-radius: 5px;
+  text-align: center;
+}
+.futur-days {
+  align-content: center;
+}
+.temp {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.temp-symbol,
+.Fehrnhit-symbol,
+.brder-symbol {
+  font-size: 1rem;
+  position: relative;
+  top: -17px;
+  color: #e7eaf6;
+  text-decoration: none;
+}
+.temp-symbol,
+.Fehrnhit-symbol:hover {
+  cursor: pointer;
+}
+.temp-symbol:hover,
+.Fehrnhit-symbol:hover {
+  color: #e7eaf6;
+}
+.futur-days p,
+.futur-days #min {
+  opacity: 0.5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.forcast-degree {
+  font-weight: bold;
+}
+
+#city-name {
+  font-size: xx-large;
+  text-transform: capitalize;
+}
+#author {
+  display: inline-flex;
+  text-decoration: none;
+}
+#git-url {
+  text-decoration: none;
+}
+#icon {
+  max-width: 50%;
+}
+
+@media (max-width: 900px) {
+  #city-name {
+    font-size: 20px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  #day-and-time {
+    font-size: 18px;
   }
-  to {
-    transform: rotate(360deg);
+  #description {
+    font-size: 18px;
+  }
+  #pressure {
+    font-size: 18px;
+  }
+  #humidity {
+    font-size: 18px;
+  }
+  #wind {
+    font-size: 18px;
+  }
+  .card-body p {
+    font-size: 16px;
+  }
+  .card-body img {
+    padding-right: 20px;
+  }
+  .forcast-degree {
+    font-size: 16px;
+  }
+  .futur-days .card {
+    max-width: 60px;
   }
 }
