@@ -1,0 +1,6 @@
+.Weather .container {
+  border: 1px solid #828282;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  padding: 16px;
+}

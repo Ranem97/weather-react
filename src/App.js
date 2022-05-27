@@ -1,22 +1,11 @@
-import "bootstrap/dist/css/bootstrap.css";
-// Put any other imports below so that CSS from your
-// components takes precedence over default styles.
-import "./App.css";
 import React from "react";
+import Weather from "./Weather";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <footer>
-        <span>
-          <a href="https://github.com/Ranem97/weather-react" id="git-url">
-            Open-Source Code
-          </a>
-        </span>
-        <span id="author">
-          <p>by Ranem Haffar</p>
-        </span>
-      </footer>
+      <Weather />
     </div>
   );
 }
