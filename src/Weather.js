@@ -13,39 +13,39 @@ export default function Weather() {
                 type="search"
                 placeholder="Enter a city.."
                 className="form-control"
+                autoFocus="on"
               />
             </div>
             <div className="col-3">
-              <input type="submit" value="Search" className="btn btn-primary" />
+              <input
+                type="submit"
+                value="Search"
+                className="btn btn-primary w-100"
+              />
             </div>
           </div>
         </form>
         <div className="row">
           <div className="col-6">
             <h1>San Francisco</h1>
-            <h3>September 25,2015</h3>
+            <h5>September 25,2015</h5>
             <img
               src="https://assets.msn.com/bundles/v1/weather/latest/PartlyCloudyDayV3.svg"
               alt="weather icon"
             />
-            <h2>Cloudy</h2>
+            <h3>Cloudy</h3>
           </div>
           <div className="col-6">
-            <div>72°</div>
-            <div>81°/57°</div>
+            <div className="temperature">
+              <span className="temp">72</span>
+              <span className="unit">°</span>
+            </div>
+            <div className="min-max">
+              <span className="max">81°</span>/<span className="min">57°</span>
+            </div>
           </div>
         </div>
       </div>
-      <footer>
-        <span>
-          <a href="https://github.com/Ranem97/weather-react" id="git-url">
-            Open-Source Code
-          </a>
-        </span>
-        <span id="author">
-          <p>by Ranem Haffar</p>
-        </span>
-      </footer>
     </div>
   );
 }

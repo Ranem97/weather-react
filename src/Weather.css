@@ -1,6 +1,44 @@
+.Weather {
+  font-family: "Roboto", sans-serif;
+  margin: 30px auto;
+}
+
 .Weather .container {
   border: 1px solid #828282;
   border-radius: 5px;
-  font-family: "Roboto", sans-serif;
   padding: 16px;
+}
+.Weather form {
+  margin-bottom: 20px;
+}
+
+.Weather h1 {
+  margin: 0;
+}
+
+.Weather .temp {
+  font-family: "Montserrat", sans-serif;
+  font-size: 94px;
+  margin-left: 100px;
+  margin-bottom: 0;
+}
+.Weather .unit {
+  font-family: "Montserrat", sans-serif;
+  font-size: 64px;
+  position: relative;
+  line-height: 1;
+  top: -30px;
+}
+.Weather .min-max {
+  font-family: "Montserrat", sans-serif;
+  font-size: 34px;
+  margin-top: 0;
+  margin-left: 110px;
+  position: relative;
+  line-height: 1;
+  top: -20px;
+}
+
+.Weather img {
+  width: 64px;
 }

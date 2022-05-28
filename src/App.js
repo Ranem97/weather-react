@@ -6,6 +6,14 @@ function App() {
   return (
     <div className="App">
       <Weather />
+      <footer>
+        <p>
+          <a href="https://github.com/Ranem97/weather-react">
+            Open-Source Code
+          </a>
+          <span> by Ranem Haffar</span>
+        </p>
+      </footer>
     </div>
   );
 }
