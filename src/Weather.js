@@ -45,7 +45,7 @@ export default function Weather() {
           <div className="row">
             <div className="col-6 text-capitalize">
               <h1>{weatherData.city}</h1>
-              <h5>{weatherData.data}</h5>
+              <h5>{weatherData.date}</h5>
               <img
                 src="https://assets.msn.com/bundles/v1/weather/latest/PartlyCloudyDayV3.svg"
                 alt="weather icon"
