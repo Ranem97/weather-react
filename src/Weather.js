@@ -1,6 +1,7 @@
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.css";
 import React, { useState } from "react";
+import LoadingIcons from "react-loading-icons";
 import "./Weather.css";
 
 export default function Weather() {
@@ -74,6 +75,10 @@ export default function Weather() {
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
 
-    return "Loading...";
+    return (
+      <div className="Weather text-center">
+        <LoadingIcons.BallTriangle stroke="#98ff98" strokeOpacity={1} />;
+      </div>
+    );
   }
 }
