@@ -2,6 +2,7 @@ import axios from "axios";
 import "bootstrap/dist/css/bootstrap.css";
 import React, { useState } from "react";
 import LoadingIcons from "react-loading-icons";
+import FormattedDate from "./FormattedDate";
 import "./Weather.css";
 
 export default function Weather() {
@@ -17,7 +18,7 @@ export default function Weather() {
       max: response.data.main.temp_max,
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
-      date: "September 25,2015",
+      date: new Date(response.data.dt * 1000),
     });
   }
   if (weatherData.ready) {
@@ -46,7 +47,9 @@ export default function Weather() {
           <div className="row">
             <div className="col-6 text-capitalize">
               <h1>{weatherData.city}</h1>
-              <h5>{weatherData.date}</h5>
+              <h5>
+                <FormattedDate date={weatherData.date} />
+              </h5>
               <img
                 src="https://assets.msn.com/bundles/v1/weather/latest/PartlyCloudyDayV3.svg"
                 alt="weather icon"
