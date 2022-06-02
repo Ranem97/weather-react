@@ -27,10 +27,13 @@
 }
 .Weather .unit {
   font-family: "Montserrat", sans-serif;
-  font-size: 64px;
+  font-size: 34px;
   position: relative;
   line-height: 1;
-  top: -25px;
+  top: -50px;
+}
+.Weather a {
+  text-decoration: none;
 }
 .Weather .min-max {
   font-family: "Montserrat", sans-serif;
