@@ -1,3 +1,12 @@
+body {
+  background: linear-gradient(
+    360deg,
+    rgb(221, 187, 185) 0%,
+    rgb(134, 155, 197) 100%
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 .App {
   max-width: 800px;
   margin: 30px auto;

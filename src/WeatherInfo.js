@@ -10,10 +10,7 @@ export default function WeatherInfo(props) {
           <h5>
             <FormattedDate date={props.data.date} />
           </h5>
-          <img
-            src="https://assets.msn.com/bundles/v1/weather/latest/PartlyCloudyDayV3.svg"
-            alt="weather icon"
-          />
+          <img src={props.data.icon} alt="weather icon" />
           <h3>{props.data.description}</h3>
         </div>
         <div className="col-6">
