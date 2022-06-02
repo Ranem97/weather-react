@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Weather />
+      <Weather defaultCity="Damascus" />
       <footer>
         <p>
           <a href="https://github.com/Ranem97/weather-react">
