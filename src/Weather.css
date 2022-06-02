@@ -21,7 +21,7 @@
 
 .Weather .temp {
   font-family: "Montserrat", sans-serif;
-  font-size: 94px;
+  font-size: 100px;
   margin-left: 100px;
   margin-bottom: 0;
 }
@@ -43,5 +43,5 @@
 }
 
 .Weather img {
-  width: 64px;
+  width: 94px;
 }
