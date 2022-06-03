@@ -31,11 +31,15 @@ export default function WeatherTemperature(props) {
       </div>
     );
   } else {
+    let FahrenheitTemp = (props.celsius * 9) / 5 + 32;
+    let MaxTemp = (props.max * 9) / 5 + 32;
+
+    let MinTemp = (props.min * 9) / 5 + 32;
+
     return (
-      // let FahrenheitTemp =
       <div className="WeatherTemperature">
         <div className="temperature">
-          <span className="temp">{Math.round(props.celsius)}</span>
+          <span className="temp">{Math.round(FahrenheitTemp)}</span>
           <span className="unit">
             °
             <a href="/" onClick={convertToCelsius}>
@@ -44,8 +48,8 @@ export default function WeatherTemperature(props) {
           </span>
         </div>
         <div className="min-max">
-          <span className="max">{Math.round(props.max)}°</span>/
-          <span className="min"> {Math.round(props.min)}°</span>
+          <span className="max">{Math.round(MaxTemp)}°</span>/
+          <span className="min"> {Math.round(MinTemp)}°</span>
         </div>
       </div>
     );

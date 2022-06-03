@@ -66,7 +66,7 @@ export default function Weather(props) {
 
     return (
       <div className="Weather text-center">
-        <LoadingIcons.BallTriangle stroke="#98ff98" strokeOpacity={1} />;
+        <LoadingIcons.BallTriangle stroke="#98ff98" strokeOpacity={1} />
       </div>
     );
   }
