@@ -2,6 +2,7 @@ import axios from "axios";
 import "bootstrap/dist/css/bootstrap.css";
 import React, { useState } from "react";
 import LoadingIcons from "react-loading-icons";
+import WeatherForcast from "./WeatherForcast";
 
 import WeatherInfo from "./WeatherInfo";
 import "./Weather.css";
@@ -19,7 +20,7 @@ export default function Weather(props) {
       min: response.data.main.temp_min,
       max: response.data.main.temp_max,
       description: response.data.weather[0].description,
-      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       date: new Date(response.data.dt * 1000),
     });
   }
@@ -56,6 +57,8 @@ export default function Weather(props) {
             </div>
           </form>
           <WeatherInfo data={weatherData} />
+          <hr />
+          <WeatherForcast />
         </div>
       </div>
     );
